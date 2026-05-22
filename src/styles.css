@@ -529,23 +529,23 @@ textarea {
 }
 
 .about-grid {
-  grid-template-columns: minmax(0, 0.92fr) minmax(520px, 1.08fr);
-  gap: 36px;
+  grid-template-columns: minmax(0, 1.08fr) minmax(480px, 0.92fr);
+  gap: 22px;
   align-items: center;
 }
 
 .about-copy h3 {
-  max-width: 12ch;
-  font-size: clamp(2.45rem, 4vw, 3.42rem);
-  line-height: 1.14;
+  max-width: 10.5ch;
+  font-size: clamp(2.55rem, 4.15vw, 3.7rem);
+  line-height: 1.18;
   letter-spacing: -0.03em;
 }
 
 .section-text {
   margin: 14px 0 22px;
-  font-size: 1.03rem;
-  line-height: 1.9;
-  max-width: 36rem;
+  font-size: 1.01rem;
+  line-height: 1.82;
+  max-width: 34rem;
 }
 
 .about-badge-row {
@@ -582,7 +582,7 @@ textarea {
 
 .about-visual {
   position: relative;
-  min-height: 420px;
+  min-height: 390px;
   isolation: isolate;
 }
 
@@ -601,10 +601,10 @@ textarea {
 
 .terminal-card {
   position: absolute;
-  left: 6px;
-  top: 54px;
+  left: 0;
+  top: 34px;
   z-index: 2;
-  width: 430px;
+  width: 450px;
   padding: 16px 18px 18px;
   border-radius: 14px;
   font-family: 'Fira Code', monospace;
@@ -662,13 +662,13 @@ textarea {
 
 .desk-illustration {
   position: absolute;
-  right: 0;
-  bottom: -6px;
+  right: -18px;
+  bottom: -12px;
   z-index: 1;
-  width: 420px;
-  height: 300px;
+  width: 395px;
+  height: 278px;
   object-fit: contain;
-  object-position: center bottom;
+  object-position: right bottom;
   filter: drop-shadow(0 26px 42px rgba(25, 12, 52, 0.42));
 }
 
@@ -959,6 +959,10 @@ textarea {
 
   .about-visual {
     min-height: 430px;
+  }
+
+  .terminal-card {
+    width: 420px;
   }
 
   .tech-grid {
